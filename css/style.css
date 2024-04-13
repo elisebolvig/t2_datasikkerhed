@@ -1,16 +1,27 @@
 @charset "UTF-8";
+/* Variabler */
+/* Kontroller scss */
 /* General styling */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-weight: 100;
+}
+
+p {
+  font-family: "Michroma", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .sidebar {
   position: fixed;
-  background-color: #CF624A;
-  width: 75px;
+  background-color: #2B585B;
+  width: 50px;
   height: 100%;
   top: 0;
   left: 0;
@@ -23,7 +34,7 @@
   padding-bottom: 20px;
 }
 .sidebar a {
-  font-size: 30px;
+  font-size: 25px;
   text-transform: uppercase;
   font-weight: 200;
   color: white;
@@ -32,35 +43,55 @@
   writing-mode: vertical-rl; /* Gør teksten lodret */
 }
 
-.slide-1 {
-  background-color: white;
+/* Slides */
+.slide-wrapper {
+  width: calc(100% - 50px); /* Tilpas bredden til at passe til siden minus sidebar */
+  float: right;
+}
+
+.slide-1, .slide-2, .slide-3, .slide-4, .slide-5 {
+  background-color: #FFF;
+  align-items: center;
+  justify-content: center;
+  padding: 15% 150px;
+  height: 100vh;
+  background-color: red;
   align-items: center;
   justify-content: center;
   padding: 15% 150px;
   height: 100vh;
 }
-.slide-1 h1 {
+.slide-1 h1, .slide-2 h1, .slide-3 h1, .slide-4 h1, .slide-5 h1 {
+  font-size: 80px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.slide-1 p, .slide-1 h1, .slide-2 p, .slide-2 h1, .slide-3 p, .slide-3 h1, .slide-4 p, .slide-4 h1, .slide-5 p, .slide-5 h1 {
+  color: black;
+  width: 55vw;
+}
+.slide-1 h1, .slide-2 h1, .slide-3 h1, .slide-4 h1, .slide-5 h1 {
   font-size: 50px;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.slide-1 p, .slide-1 h1 {
+.slide-1 p, .slide-1 h1, .slide-2 p, .slide-2 h1, .slide-3 p, .slide-3 h1, .slide-4 p, .slide-4 h1, .slide-5 p, .slide-5 h1 {
   color: black;
   width: 40vw;
 }
 
 .slide-2 {
   background-color: #C1DFEF;
-  align-items: center;
-  justify-content: center;
-  padding: 15% 150px;
 }
-.slide-2 h1 {
-  font-size: 50px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
+
+.slide-3 {
+  background-color: #7A9989;
 }
-.slide-2 p, .slide-2 h1 {
-  color: black;
-  width: 40vw;
+
+.slide-4 {
+  background-color: #EFF2DF;
+}
+
+.slide-5 {
+  background-color: #CF624A;
 }/*# sourceMappingURL=style.css.map */
