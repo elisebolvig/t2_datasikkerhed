@@ -3,75 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.scss">
+    <title>Branch Scenarios Example</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
 
-        <!-- fixed sidebar -->
+    <section class="text-zero">
+        <h1>Hvad er passwordsikkerhed?</h1>
+        <p>I den moderne digitale æra er password sikkerhed afgørende for at beskytte vores online data og identitet. At bruge stærke, unikke adgangskoder og implementere bedste praksis er afgørende for at forhindre uautoriseret adgang og beskytte mod cyberangreb.</p>
 
-        <header class="sidebar">
-            <a href="#">LOGO</a>
-            <a href="#">KONTAKT</a>
-        </header>
+        <a href="#link2" class="smooth-scroll">Pil</a>
+    </section>
 
-        <!-- main content -->
+    <section class="text-one" id="link2">
+        <h1>Hvad er passwordsikkerhed?</h1>
+        <p>I den moderne digitale æra er password sikkerhed afgørende for at beskytte vores online data og identitet. At bruge stærke, unikke adgangskoder og implementere bedste praksis er afgørende for at forhindre uautoriseret adgang og beskytte mod cyberangreb.</p>
 
-        <section class="slide-wrapper">
-            
-            <div class="slide-1">
-                <h1>Hvad er datasikkerhed?</h1>
-                <p>Datasikkerhed refererer til beskyttelsen af digitale data mod uautoriseret adgang, uautoriseret ændring, ødelæggelse, tyveri eller lækage. Det omfatter en række sikkerhedsforanstaltninger og procedurer designet til at sikre, at data forbliver fortrolige og tilgængelige kun for dem, der har tilladelse til at få adgang til dem.
-                </p>
+        <a href="#link3" class="smooth-scroll">Pil</a>
+    </section>
+
+    <section class="text-two" id="link3">
+        <h1>Hvad er passwordsikkerhed?</h1>
+        <p>I den moderne digitale æra er password sikkerhed afgørende for at beskytte vores online data og identitet. At bruge stærke, unikke adgangskoder og implementere bedste praksis er afgørende for at forhindre uautoriseret adgang og beskytte mod cyberangreb.</p>
+
+        <a href="#section-one" class="smooth-scroll">Pil</a>
+    </section>
+
+
+    <section class="section-one" id="section-one">
+
+        <div>
+            <h2>Er du klar til at teste, hvad du ved om password sikkerhed?</h1>
+            <div>
+                <button id="yesButton">Ja</button>
+                <button id="noButton">Nej</button>
             </div>
+        </div>
 
-        </section>
+    </section>
 
-        <section class="slide-wrapper">
-            
-            <div class="slide-2">
-                <h1>Hvad er datasikkerhed?</h1>
-                <p>Datasikkerhed refererer til beskyttelsen af digitale data mod uautoriseret adgang, uautoriseret ændring, ødelæggelse, tyveri eller lækage. Det omfatter en række sikkerhedsforanstaltninger og procedurer designet til at sikre, at data forbliver fortrolige og tilgængelige kun for dem, der har tilladelse til at få adgang til dem.
-                </p>
-            </div>
+    <section id="yesContent" class="hidden">
+        <h2>Du valgte 'Ja'</h2>
+        <p>Her kommer et par spørgsmål om password sikkerhed</p>
 
-        </section>
+        <h1>Velkommen til vores hjemmeside</h1>
 
-        <section class="slide-wrapper">
-            
-            <div class="slide-3">
-                <h1>Hvad er datasikkerhed?</h1>
-                <p>Datasikkerhed refererer til beskyttelsen af digitale data mod uautoriseret adgang, uautoriseret ændring, ødelæggelse, tyveri eller lækage. Det omfatter en række sikkerhedsforanstaltninger og procedurer designet til at sikre, at data forbliver fortrolige og tilgængelige kun for dem, der har tilladelse til at få adgang til dem.
-                </p>
-            </div>
+        <div>
+            <button id="yesButton" >Ja</button>
+            <button id="noButton" >Nej</button>
+        </div>
 
-        </section>
+    </section>
 
-        <section class="slide-wrapper">
-            
-            <div class="slide-4">
-                <h1>Hvad er datasikkerhed?</h1>
-                <p>Datasikkerhed refererer til beskyttelsen af digitale data mod uautoriseret adgang, uautoriseret ændring, ødelæggelse, tyveri eller lækage. Det omfatter en række sikkerhedsforanstaltninger og procedurer designet til at sikre, at data forbliver fortrolige og tilgængelige kun for dem, der har tilladelse til at få adgang til dem.
-                </p>
-            </div>
+    <section id="noContent" class="hidden">
+        <h2>Du valgte 'Nej'</h2>
+        <p>Her er det alternative indhold, som kun vises, hvis du valgte 'Nej'.</p>
 
-        </section>
+        <h1>Velkommen til vores hjemmeside</h1>
 
-        <section class="slide-wrapper">
-            
-            <div class="slide-5">
-                <h1>Hvad er datasikkerhed?</h1>
-                <p>Datasikkerhed refererer til beskyttelsen af digitale data mod uautoriseret adgang, uautoriseret ændring, ødelæggelse, tyveri eller lækage. Det omfatter en række sikkerhedsforanstaltninger og procedurer designet til at sikre, at data forbliver fortrolige og tilgængelige kun for dem, der har tilladelse til at få adgang til dem.
-                </p>
-            </div>
+        <div>
+            <button id="yesButton">Ja</button>
+            <button id="noButton">Nej</button>
+        </div>
 
-        </section>
+    </section>
 
-
-    </main>
-
-    <script src="script.js"></script> <!--Flyt op i header-->
-    
+    <script src="script.js"></script>
 </body>
 </html>
