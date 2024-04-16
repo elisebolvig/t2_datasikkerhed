@@ -4,36 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Branch Scenarios Example</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.scss">
 </head>
 <body>
 
-    <section class="text-zero">
-        <h1>Hvad er passwordsikkerhed?</h1>
-        <p>I den moderne digitale æra er password sikkerhed afgørende for at beskytte vores online data og identitet. At bruge stærke, unikke adgangskoder og implementere bedste praksis er afgørende for at forhindre uautoriseret adgang og beskytte mod cyberangreb.</p>
+    <!-- Gennemgang af emnet passwordsikkerhed -->
 
-        <a href="#link2" class="smooth-scroll">Pil</a>
+    <section class="text-zero" id="link1">
+        <h1>Hvad er<br>password <br> sikkerhed?</h1>
+        <div class="arrow-container-right">
+            <a href="#link2" class="smooth-scroll"><img class="arrow" src="img/arrow_green.png" alt="arrow"></a>
+        </div>
     </section>
 
     <section class="text-one" id="link2">
-        <h1>Hvad er passwordsikkerhed?</h1>
-        <p>I den moderne digitale æra er password sikkerhed afgørende for at beskytte vores online data og identitet. At bruge stærke, unikke adgangskoder og implementere bedste praksis er afgørende for at forhindre uautoriseret adgang og beskytte mod cyberangreb.</p>
-
-        <a href="#link3" class="smooth-scroll">Pil</a>
+        <a href="#link1" class="smooth-scroll back-btn-light-green">Tilbage</a>
+        <p>I den moderne digitale æra er password sikkerhed afgørende for at beskytte vores online data og identitet. Passwordsikkerhed indebærer at bruge stærke, unikke adgangskoder og ikke mindst implementere elementer, som kan være afgørende for at forhindre uautoriseret adgang og beskytte dig selv mod cyberangreb.</p>
+        <div class="arrow-container-right">
+            <a href="#link3" class="smooth-scroll"><img class="arrow" src="img/arrow_light_green.png" alt="arrow"></a>
+        </div>
     </section>
 
     <section class="text-two" id="link3">
-        <h1>Hvad er passwordsikkerhed?</h1>
-        <p>I den moderne digitale æra er password sikkerhed afgørende for at beskytte vores online data og identitet. At bruge stærke, unikke adgangskoder og implementere bedste praksis er afgørende for at forhindre uautoriseret adgang og beskytte mod cyberangreb.</p>
-
-        <a href="#section-one" class="smooth-scroll">Pil</a>
+        <a href="#link2" class="smooth-scroll back-btn-orange">Tilbage</a>
+        <h2>Hvordan <br>beskytter man <br>sit password?</h2>
+        <div class="arrow-container-right">
+            <a href="#link4" class="smooth-scroll"><img class="arrow" src="img/arrow_orange.png" alt="arrow"></a>
+        </div>
     </section>
 
+    <section class="text-three" id="link4">
+        <a href="#link3" class="smooth-scroll back-btn-orange">Tilbage</a>
+        <p>Beskyttelse af dit password er afgørende for sikkerheden af dine online konti og personlige oplysninger. Her er nogle vigtige retningslinjer og bedste praksis for at sikre dine passwords:</p>
+        <div class="arrow-container-right">
+            <a href="#link5" class="smooth-scroll"><img class="arrow" src="img/arrow_orange.png" alt="arrow"></a>
+        </div>
+    </section>
+
+    <section class="text-four" id="link5">
+        <a href="#link4" class="smooth-scroll back-btn-orange">Tilbage</a>
+        <h2>Her er det ekstra vigtigt, at du bruger stærke kodeord:</h2>
+        <div class="arrow-container-right">
+            <a href="#link6" class="smooth-scroll"><img class="arrow" src="img/arrow_orange.png" alt="arrow"></a>
+        </div>
+    </section>
+
+    <section class="text-five" id="link6">
+        <a href="#link5" class="smooth-scroll back-btn-green">Tilbage</a>
+        <p>Beskyttelse af dit password er afgørende for sikkerheden af dine online konti og personlige oplysninger. Her er nogle vigtige retningslinjer og bedste praksis for at sikre dine passwords:</p>
+        <div class="arrow-container-right">
+            <a href="#section-zero" class="smooth-scroll"><img class="arrow" src="img/arrow_green.png" alt="arrow"></a>
+        </div>
+    </section>
+
+    <!-- Teaser -->
+
+    <section class="section-zero" id="section-zero">
+        <h3>Er du klar?</h3>
+        <p>Dette er en hyggeligt gennemgang af forskellige aspekter vi netop har gennemgået på de forrige slides. Det er vigtigt at forstå., hvorfor datasikkerhed er vigtigt. Kom med og gør et forsøg! </p>
+        <div class="arrow-container-center">
+            <a href="#section-one" class="smooth-scroll"><img class="arrow" src="img/arrow_light_green.png" alt="arrow"></a>
+        </div>
+    </section>
+
+    <!-- Branching Scenarios -->
 
     <section class="section-one" id="section-one">
 
         <div>
-            <h2>Er du klar til at teste, hvad du ved om password sikkerhed?</h1>
+            <h2>Er password sikkerhed <br>vigtigt for dig?</h2>
             <div>
                 <button id="yesButton">Ja</button>
                 <button id="noButton">Nej</button>
@@ -67,6 +106,8 @@
         </div>
 
     </section>
+
+    <!-- Afslutning -->
 
     <script src="script.js"></script>
 </body>

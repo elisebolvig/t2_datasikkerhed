@@ -1,3 +1,5 @@
+@use 'partial';
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -6,21 +8,127 @@
     font-weight: 100;
 }
 
-.text-zero, .text-one, .text-two{
+/*
+body {
+    overflow: hidden; /* Denne funktion forhindrer scroll på desktop 
+} */
+
+
+h1, h2, h3{
+    margin-top: 10vh;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 900;
+    font-size: 130px;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 110px;
+    margin: 15vh 0 0 10vw;
+}
+
+h3{
+    font-size: 110px;   
+}
+
+
+.back-btn-light-green, .back-btn-orange, .back-btn-green{
+    text-decoration: none;
+    border: none;
+    font-family: "Rubik Mono One", monospace;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #8FC8A9;
+}
+
+.back-btn-orange{
+    color: #CF624A;
+}
+
+.back-btn-green{
+    color: #2B585B;
+}
+
+/* PILE */ 
+
+.arrow-container-right{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.arrow-container-left{
+    position: relative;
+    margin-top: 17vh;
+    bottom: 30px;
+    left: 0px;
+}
+
+.arrow-container-center{
+    position: relative;
+    margin-top: 20vh;
+    bottom: 30px;
+    transform: rotate(45deg);
+}
+
+.arrow{ /*Skal laves til en mix-in*/
+    width: 100px;
+    height: auto;
+}
+
+.text-zero, .text-one, .text-two, .text-three, .text-four, .text-five{
     height: 100vh;
-    background-color: #EFF2DF;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding: 35vh;
+    background-color: #A1E0F2;
+    padding: 5vh;
+    color: #2B585B;
+    position: relative;
+
+    p{
+        width: 60vw;
+        font-size: 30px;
+        margin-top: 20vh;
+        margin-left: 15vw;
+        line-height: 1.5;
+    }
 }
 
 .text-one{
     background-color: #2B585B;
+    color: #8FC8A9;
 }
 
 .text-two{
-    background-color: #7A9989;
+    background-color: #8FC8A9;
+    color: #CF624A;
+}
+
+.text-four{
+    background-color: #8FC8A9;
+    color: #CF624A;
+}
+
+.text-four{
+    background-color: #2B585B;
+    color: #8FC8A9;
+}
+
+
+.section-zero{
+    height: 100vh;
+    background-color: #CF624A;
+    color: #8FC8A9;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 0;
+
+    p{
+        width: 50vw;
+        line-height: 1.5;
+        font-size: 20px;
+        margin: 5vh 25vw;
+    }
 }
 
 .section-one{
@@ -29,11 +137,12 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding: 35vh;
+    padding: 20vh;
 
     h2{
         font-size: 50px;
         margin-bottom: 20vh;
+        margin-left: 0;
         text-transform: uppercase;
         color: #2B585B;
     }
