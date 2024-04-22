@@ -1,25 +1,3 @@
-// Vælg knapperne fra HTML
-const yesButton = document.getElementById('yesButton');
-const noButton = document.getElementById('noButton');
-
-
-// Vælg sektionerne med indhold fra HTML
-const yesContent = document.getElementById('yesContent');
-const noContent = document.getElementById('noContent');
-
-// Lyt efter klik på 'Ja'-knappen
-yesButton.addEventListener('click', function() {
-    // Vis kun 'Ja'-sektionen og skjul 'Nej'-sektionen
-    yesContent.classList.add('visible');
-    noContent.classList.remove('visible');
-});
-
-// Lyt efter klik på 'Nej'-knappen
-noButton.addEventListener('click', function() {
-    // Vis kun 'Nej'-sektionen og skjul 'Ja'-sektionen
-    noContent.classList.add('visible');
-    yesContent.classList.remove('visible');
-});
 
 // Smooth scroll med a-link pil
 
@@ -61,3 +39,30 @@ document.addEventListener('DOMContentLoaded', function() {
         return c / 2 * ((t -= 2) * t * t + 2) + b;
     }
 });
+
+// Branching Scenarios: Scenarie 1
+
+const yesButton = document.getElementById('yesButton'); // Vælg knapperne fra HTML
+const noButton = document.getElementById('noButton'); // Vælg knapperne fra HTML
+const yesContent = document.getElementById('yesContent'); // Vælg sektionerne med indhold fra HTML
+const noContent = document.getElementById('noContent'); // Vælg sektionerne med indhold fra HTML
+
+// Handling, når man tykker "yesButton":
+yesButton.addEventListener('click', function() {
+    // Vis kun 'Ja'-sektionen og skjul 'Nej'-sektionen
+    yesContent.classList.add('visible');
+    noContent.classList.remove('visible');
+});
+
+// Handling, når man tykker "noButton":
+noButton.addEventListener('click', function() {
+    // Vis kun 'Nej'-sektionen og skjul 'Ja'-sektionen
+    noContent.classList.add('visible');
+    yesContent.classList.remove('visible');
+
+});
+
+
+
+
+

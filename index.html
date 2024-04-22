@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Branch Scenarios Example</title>
+    <title>Passwordsikkerhed</title>
     <link rel="stylesheet" href="css/style.scss">
 </head>
 <body>
@@ -67,47 +67,73 @@
         </div>
     </section>
 
-    <!-- Branching Scenarios -->
+    <!-- Branching Scenarios: Scenarie 1 -->
 
     <section class="section-one" id="section-one">
 
         <div>
-            <h2>Er password sikkerhed <br>vigtigt for dig?</h2>
+            <h2>CASE 1: Oprettelse af nyt password</h2>
+            <p>Du er ved at oprette en ny online konto, og du bliver bedt om at vælge et password. Du tænker over, hvor vigtigt det er at have et sikkert password for at beskytte dine oplysninger. Du overvejer flere muligheder, men ender med at vælge mellem følgende, hvilket password vil være ideelt at vælge?</p>
             <div>
-                <button id="yesButton">Ja</button>
-                <button id="noButton">Nej</button>
+                <button id="yesButton">Korrekt</button>
+                <button id="noButton">Forkert</button>
             </div>
         </div>
 
     </section>
 
+    <!-- Branching Scenarios: Scenarie 1 med korrekt svar -->
+
     <section id="yesContent" class="hidden">
-        <h2>Du valgte 'Ja'</h2>
-        <p>Her kommer et par spørgsmål om password sikkerhed</p>
+        <h2>KORREKT!</h2>
+        <p>Det er nemlig altid vigtigt at benytte kodeord med mange tegn. <br><br>Kodeordet skal helst bestå af mindst 8 tegn og meget gerne flere. Jo flere tegn, des længere tid vil det tage at hacke det. Specialtegn, tal og en blanding mellem store og små bogstaver er alt sammen med til at gøre dit kodeord endnu stærkere. Specialtegn kan dog gøre dit kodeord svært at huske for dig selv. Hvis det er et problem for dig at huske et kodeord med specialtegn, så gå efter et meget langt password med almindelige bogstaver i stedet. Husk, at længden på passwordet er vigtigere end kompleksiteten. </p>
 
-        <h1>Velkommen til vores hjemmeside</h1>
+        <h4>Er der andre måder du kan sikre dit password?</h4>
 
         <div>
-            <button id="yesButton" >Ja</button>
-            <button id="noButton" >Nej</button>
+            <button id="YesButton2" >Ja, du kan benytte en password-manager </button>
+            <button id="NoButton2" >Nej, man kan desværre ikke gøre noget</button>
         </div>
+        
 
     </section>
 
-    <section id="noContent" class="hidden">
-        <h2>Du valgte 'Nej'</h2>
-        <p>Her er det alternative indhold, som kun vises, hvis du valgte 'Nej'.</p>
+    <!-- Branching Scenarios: Scenarie 1 med forkert svar -->
 
-        <h1>Velkommen til vores hjemmeside</h1>
+    <section id="noContent" >
+        <h2>FORKERT!</h2>
+        <p>Det er altid vigtigt at benytte kodeord med mange tegn. Kodeordet skal helst bestå af mindst 8 tegn og meget gerne flere. Jo flere tegn, des længere tid vil det tage at hacke det. Specialtegn, tal og en blanding mellem store og små bogstaver er alt sammen med til at gøre dit kodeord endnu stærkere. Specialtegn kan dog gøre dit kodeord svært at huske for dig selv. Hvis det er et problem for dig at huske et kodeord med specialtegn, så gå efter et meget langt password med almindelige bogstaver i stedet. Husk, at længden på passwordet er vigtigere end kompleksiteten. </p>
+
+        <h4>Er der andre måder du kan sikre dit password?</h4>
 
         <div>
-            <button id="yesButton">Ja</button>
-            <button id="noButton">Nej</button>
+            <button id="yesButton3" >Ja, du kan benytte en password-manager </button>
+            <button id="noButton3" >Nej, man kan desværre ikke gøre noget</button>
         </div>
-
     </section>
+
+
+
+    <!-- Branching Scenarios: Scenarie 2 -->
+
+
+
+    
+
+    
+
+
+
+
+
 
     <!-- Afslutning -->
+
+    <section class="section-zero" id="section-end">
+        <a href="#link5" class="smooth-scroll back-btn-green">Tilbage</a>
+        <h3>TILLYKKE</h3>
+        <p>Du er klar til at begå dig på nettet!</p>
+    </section>
 
     <script src="script.js"></script>
 </body>

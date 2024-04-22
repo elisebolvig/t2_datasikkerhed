@@ -13,7 +13,7 @@
 body {
     overflow: hidden; /* Denne funktion forhindrer scroll på desktop 
 } */
-h1, h2, h3 {
+h1, h2, h3, h4 {
   margin-top: 10vh;
   font-family: "Rubik Mono One", monospace;
   font-weight: 900;
@@ -28,6 +28,12 @@ h2 {
 
 h3 {
   font-size: 110px;
+}
+
+h4 {
+  font-size: 30px;
+  margin-bottom: 10vh;
+  color: #2B585B;
 }
 
 .back-btn-light-green, .back-btn-orange, .back-btn-green {
@@ -76,7 +82,7 @@ h3 {
 
 .text-zero, .text-one, .text-two, .text-three, .text-four, .text-five {
   height: 100vh;
-  background-color: #A1E0F2;
+  background-color: #336699;
   padding: 5vh;
   color: #2B585B;
   position: relative;
@@ -125,7 +131,7 @@ h3 {
   margin: 5vh 25vw;
 }
 
-.section-one {
+.section-one, #yesContent, #noContent {
   height: 100vh;
   background-color: #C1DFEF;
   text-align: center;
@@ -133,12 +139,22 @@ h3 {
   justify-content: center;
   padding: 20vh;
 }
-.section-one h2 {
+.section-one h2, #yesContent h2, #noContent h2 {
   font-size: 50px;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
   margin-left: 0;
   text-transform: uppercase;
   color: #2B585B;
+  margin-top: 5vh;
+}
+.section-one h4, #yesContent h4, #noContent h4 {
+  color: #CF624A;
+}
+.section-one p, #yesContent p, #noContent p {
+  width: 60vw;
+  color: #2B585B;
+  margin: 5vh 10vw 15vh 10vw;
+  font-size: 20px;
 }
 
 .hidden {
@@ -147,16 +163,18 @@ h3 {
 
 button {
   margin: 10px 40px;
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  font-size: 16px;
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 15px;
   cursor: pointer;
-  background-color: #2B585B;
-  color: #f0f0f0;
+  background-color: #CF624A;
+  color: #fff;
   border: none;
   transition: transform 0.3s ease;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
 }
 button:hover {
   transform: scale(1.2);
@@ -166,13 +184,13 @@ button img {
 }
 
 #yesContent {
-  background-color: chocolate;
+  background-color: #8FC8A9;
   display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: 1;
   padding: 20px;
   box-sizing: border-box;
@@ -180,7 +198,17 @@ button img {
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding: 35vh;
+}
+#yesContent p {
+  text-align: center;
+  margin-left: 10vw;
+  margin-bottom: 10vh;
+  width: 80vw;
+}
+#yesContent button {
+  width: 400px;
+  height: 100px;
+  padding: 20px;
 }
 
 #yesContent.visible {
@@ -193,8 +221,8 @@ button img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: #f0f0f0;
+  height: 100vh;
+  background-color: #2B585B;
   z-index: 1;
   padding: 20px;
   box-sizing: border-box;
@@ -202,7 +230,23 @@ button img {
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding: 35vh;
+}
+#noContent h2, #noContent h4 {
+  color: #CF624A;
+}
+#noContent p {
+  text-align: center;
+  margin-left: 10vw;
+  margin-bottom: 10vh;
+  width: 80vw;
+  color: #8FC8A9;
+}
+#noContent button {
+  width: 400px;
+  height: 100px;
+  padding: 20px;
+  background-color: #CF624A;
+  color: #fff;
 }
 
 #noContent.visible {
