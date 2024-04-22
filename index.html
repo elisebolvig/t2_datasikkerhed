@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Passwordsikkerhed</title>
-    <link rel="stylesheet" href="css/style.scss">
+    <link rel="stylesheet" href="css/style.scss"> <!-- Virker ikke i Chrome -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Virker i Chrome -->
 </head>
 <body>
 
@@ -72,55 +73,68 @@
     <section class="section-one" id="section-one">
 
         <div>
-            <h2>CASE 1: Oprettelse af nyt password</h2>
-            <p>Du er ved at oprette en ny online konto, og du bliver bedt om at vælge et password. Du tænker over, hvor vigtigt det er at have et sikkert password for at beskytte dine oplysninger. Du overvejer flere muligheder, men ender med at vælge mellem følgende, hvilket password vil være ideelt at vælge?</p>
+            <h2>Oprettelse af nyt password</h2>
+            <p>Du er ved at oprette en ny online konto, og du bliver bedt om at vælge et password. Du tænker over, hvor vigtigt det er at have et sikkert password for at beskytte dine oplysninger. Du overvejer flere muligheder, men ender med at vælge mellem disse to muligheder. <br><br> Hvilket password vil være ideelt at vælge?</p>
             <div>
-                <button id="yesButton">Korrekt</button>
-                <button id="noButton">Forkert</button>
+                <button id="yesButton">2Tulipaner4Får!</button>
+                <button id="noButton">password1234</button>
             </div>
         </div>
 
     </section>
 
-    <!-- Branching Scenarios: Scenarie 1 med korrekt svar -->
-
-    <section id="yesContent" class="hidden">
+    <section id="yesContent" class="hidden"> <!-- Branching Scenarios: Scenarie 1 med korrekt svar -->
         <h2>KORREKT!</h2>
-        <p>Det er nemlig altid vigtigt at benytte kodeord med mange tegn. <br><br>Kodeordet skal helst bestå af mindst 8 tegn og meget gerne flere. Jo flere tegn, des længere tid vil det tage at hacke det. Specialtegn, tal og en blanding mellem store og små bogstaver er alt sammen med til at gøre dit kodeord endnu stærkere. Specialtegn kan dog gøre dit kodeord svært at huske for dig selv. Hvis det er et problem for dig at huske et kodeord med specialtegn, så gå efter et meget langt password med almindelige bogstaver i stedet. Husk, at længden på passwordet er vigtigere end kompleksiteten. </p>
+        <p>Det er nemlig altid vigtigt at benytte kodeord, som ikke kan gættes! <br><br>Kodeordet skal helst bestå af mindst 8 tegn og meget gerne flere. Jo flere tegn, des længere tid vil det tage at hacke det. Specialtegn, tal og en blanding mellem store og små bogstaver er alt sammen med til at gøre dit kodeord endnu stærkere.</p>
 
         <h4>Er der andre måder du kan sikre dit password?</h4>
 
         <div>
-            <button id="YesButton2" >Ja, du kan benytte en password-manager </button>
-            <button id="NoButton2" >Nej, man kan desværre ikke gøre noget</button>
+            <button id="noButtonTwo">Nej, man kan desværre ikke gøre mere for at beskytte sit password</button>
+            <button id="yesButtonTwo">Ja, du kan eksempelvis benytte en password-manager, der hjælper dig med at administrere dine adgangskoder</button>    
         </div>
         
-
     </section>
 
-    <!-- Branching Scenarios: Scenarie 1 med forkert svar -->
-
-    <section id="noContent" >
+    <section id="noContent" class="hidden"> <!-- Branching Scenarios: Scenarie 1 med forkert svar -->
         <h2>FORKERT!</h2>
         <p>Det er altid vigtigt at benytte kodeord med mange tegn. Kodeordet skal helst bestå af mindst 8 tegn og meget gerne flere. Jo flere tegn, des længere tid vil det tage at hacke det. Specialtegn, tal og en blanding mellem store og små bogstaver er alt sammen med til at gøre dit kodeord endnu stærkere. Specialtegn kan dog gøre dit kodeord svært at huske for dig selv. Hvis det er et problem for dig at huske et kodeord med specialtegn, så gå efter et meget langt password med almindelige bogstaver i stedet. Husk, at længden på passwordet er vigtigere end kompleksiteten. </p>
 
         <h4>Er der andre måder du kan sikre dit password?</h4>
 
         <div>
-            <button id="yesButton3" >Ja, du kan benytte en password-manager </button>
-            <button id="noButton3" >Nej, man kan desværre ikke gøre noget</button>
+            <button id="yesButtonThree">Korrekt</button>
+            <button id="noButtonThree">Forkert</button>
         </div>
-    </section>
 
+    </section>
 
 
     <!-- Branching Scenarios: Scenarie 2 -->
 
+    <section id="yesContentTwo" class="hidden">
+        <h2>KORREKT!</h2>
+        <p>Det er nemlig altid vigtigt at benytte kodeord med mange tegn. <br><br>Kodeordet skal helst bestå af mindst 8 tegn og meget gerne flere. Jo flere tegn, des længere tid vil det tage at hacke det. Specialtegn, tal og en blanding mellem store og små bogstaver er alt sammen med til at gøre dit kodeord endnu stærkere. Specialtegn kan dog gøre dit kodeord svært at huske for dig selv. Hvis det er et problem for dig at huske et kodeord med specialtegn, så gå efter et meget langt password med almindelige bogstaver i stedet. Husk, at længden på passwordet er vigtigere end kompleksiteten. </p>
+        
+    </section>
 
+    <section id="noContentTwo" class="hidden" >
+        <h2>FORKERT!</h2>
+        <p>Det er altid vigtigt at benytte kodeord med mange tegn. Kodeordet skal helst bestå af mindst 8 tegn og meget gerne flere. Jo flere tegn, des længere tid vil det tage at hacke det. Specialtegn, tal og en blanding mellem store og små bogstaver er alt sammen med til at gøre dit kodeord endnu stærkere. Specialtegn kan dog gøre dit kodeord svært at huske for dig selv. Hvis det er et problem for dig at huske et kodeord med specialtegn, så gå efter et meget langt password med almindelige bogstaver i stedet. Husk, at længden på passwordet er vigtigere end kompleksiteten. </p>
 
-    
+    </section>
 
-    
+    <section id="yesContentThree" class="hidden">
+        <h2>KORREKT!</h2>
+        <p>Det er nemlig altid vigtigt at benytte kodeord med mange tegn. <br><br>Kodeordet skal helst bestå af mindst 8 tegn og meget gerne flere. Jo flere tegn, des længere tid vil det tage at hacke det. Specialtegn, tal og en blanding mellem store og små bogstaver er alt sammen med til at gøre dit kodeord endnu stærkere. Specialtegn kan dog gøre dit kodeord svært at huske for dig selv. Hvis det er et problem for dig at huske et kodeord med specialtegn, så gå efter et meget langt password med almindelige bogstaver i stedet. Husk, at længden på passwordet er vigtigere end kompleksiteten. </p>
+        
+    </section>
+
+    <section id="noContentThree" class="hidden" >
+        <h2>FORKERT!</h2>
+        <p>Det er altid vigtigt at benytte kodeord med mange tegn. Kodeordet skal helst bestå af mindst 8 tegn og meget gerne flere. Jo flere tegn, des længere tid vil det tage at hacke det. Specialtegn, tal og en blanding mellem store og små bogstaver er alt sammen med til at gøre dit kodeord endnu stærkere. Specialtegn kan dog gøre dit kodeord svært at huske for dig selv. Hvis det er et problem for dig at huske et kodeord med specialtegn, så gå efter et meget langt password med almindelige bogstaver i stedet. Husk, at længden på passwordet er vigtigere end kompleksiteten. </p>
+
+    </section>
 
 
 

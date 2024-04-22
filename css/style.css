@@ -36,6 +36,10 @@ h4 {
   color: #2B585B;
 }
 
+p {
+  line-height: 1.5;
+}
+
 .back-btn-light-green, .back-btn-orange, .back-btn-green {
   text-decoration: none;
   border: none;
@@ -45,13 +49,22 @@ h4 {
   font-weight: 900;
   color: #8FC8A9;
 }
+.back-btn-light-green:hover, .back-btn-orange:hover, .back-btn-green:hover {
+  border-bottom: 3px solid #8FC8A9;
+}
 
 .back-btn-orange {
   color: #CF624A;
 }
+.back-btn-orange:hover {
+  border-bottom: 3px solid #CF624A;
+}
 
 .back-btn-green {
   color: #2B585B;
+}
+.back-btn-green:hover {
+  border-bottom: 3px solid #2B585B;
 }
 
 /* PILE */
@@ -82,7 +95,7 @@ h4 {
 
 .text-zero, .text-one, .text-two, .text-three, .text-four, .text-five {
   height: 100vh;
-  background-color: #336699;
+  background-color: #C1DFEF;
   padding: 5vh;
   color: #2B585B;
   position: relative;
@@ -131,7 +144,8 @@ h4 {
   margin: 5vh 25vw;
 }
 
-.section-one, #yesContent, #noContent {
+/* Branching Scenarios */
+.section-one, #yesContent, #noContent, .section-two, #yesContentTwo, #noContentTwo {
   height: 100vh;
   background-color: #C1DFEF;
   text-align: center;
@@ -139,7 +153,7 @@ h4 {
   justify-content: center;
   padding: 20vh;
 }
-.section-one h2, #yesContent h2, #noContent h2 {
+.section-one h2, #yesContent h2, #noContent h2, .section-two h2, #yesContentTwo h2, #noContentTwo h2 {
   font-size: 50px;
   margin-bottom: 10vh;
   margin-left: 0;
@@ -147,13 +161,13 @@ h4 {
   color: #2B585B;
   margin-top: 5vh;
 }
-.section-one h4, #yesContent h4, #noContent h4 {
+.section-one h4, #yesContent h4, #noContent h4, .section-two h4, #yesContentTwo h4, #noContentTwo h4 {
   color: #CF624A;
 }
-.section-one p, #yesContent p, #noContent p {
+.section-one p, #yesContent p, #noContent p, .section-two p, #yesContentTwo p, #noContentTwo p {
   width: 60vw;
   color: #2B585B;
-  margin: 5vh 10vw 15vh 10vw;
+  margin: 5vh 10vw 10vh 10vw;
   font-size: 20px;
 }
 
@@ -165,14 +179,13 @@ button {
   margin: 10px 40px;
   width: 250px;
   height: 50px;
-  font-size: 20px;
+  font-size: 16px;
   border-radius: 15px;
   cursor: pointer;
   background-color: #CF624A;
   color: #fff;
   border: none;
   transition: transform 0.3s ease;
-  text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 400;
 }
@@ -181,6 +194,10 @@ button:hover {
 }
 button img {
   color: #FFF;
+}
+
+#yesButton, #noButton {
+  text-transform: none;
 }
 
 #yesContent {
@@ -250,5 +267,75 @@ button img {
 }
 
 #noContent.visible {
+  display: block;
+}
+
+#yesContentTwo, #yesContentThree {
+  background-color: #8FC8A9;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#yesContentTwo p, #yesContentThree p {
+  text-align: center;
+  margin-left: 10vw;
+  margin-bottom: 10vh;
+  width: 80vw;
+}
+#yesContentTwo button, #yesContentThree button {
+  width: 400px;
+  height: 100px;
+  padding: 20px;
+}
+
+#yesContentTwo.visible, #noContentTwo.visible, #yesContentThree.visible {
+  display: block;
+}
+
+#noContentTwo, #noContentThree {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #2B585B;
+  z-index: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#noContentTwo h2, #noContentTwo h4, #noContentThree h2, #noContentThree h4 {
+  color: #CF624A;
+}
+#noContentTwo p, #noContentThree p {
+  text-align: center;
+  margin-left: 10vw;
+  margin-bottom: 10vh;
+  width: 80vw;
+  color: #8FC8A9;
+}
+#noContentTwo button, #noContentThree button {
+  width: 400px;
+  height: 100px;
+  padding: 20px;
+  background-color: #CF624A;
+  color: #fff;
+}
+
+#noContentThree.visible {
   display: block;
 }/*# sourceMappingURL=style.css.map */

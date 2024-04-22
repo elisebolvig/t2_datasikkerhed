@@ -1,5 +1,5 @@
 
-// Smooth scroll med a-link pil
+// Smooth scroll
 
 document.addEventListener('DOMContentLoaded', function() {
     const scrollLinks = document.querySelectorAll('.smooth-scroll');
@@ -40,6 +40,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+
+
+
 // Branching Scenarios: Scenarie 1
 
 const yesButton = document.getElementById('yesButton'); // Vælg knapperne fra HTML
@@ -62,6 +65,50 @@ noButton.addEventListener('click', function() {
 
 });
 
+
+// Branching Scenarios: Scenarie 1 - Du valgte korrekt 
+
+const yesButtonTwo = document.getElementById('yesButtonTwo'); // Vælg knapperne fra HTML
+const noButtonTwo = document.getElementById('noButtonTwo'); // Vælg knapperne fra HTML
+const yesContentTwo = document.getElementById('yesContentTwo'); // Vælg sektionerne med indhold fra HTML
+const noContentTwo = document.getElementById('noContentTwo'); // Vælg sektionerne med indhold fra HTML
+
+// Handling, når man tykker "yesButton":
+yesButtonTwo.addEventListener('click', function() {
+    // Vis kun 'Ja'-sektionen og skjul 'Nej'-sektionen
+    yesContentTwo.classList.add('visible');
+    noContentTwo.classList.remove('visible');
+});
+
+// Handling, når man tykker "noButton":
+noButtonTwo.addEventListener('click', function() {
+    // Vis kun 'Nej'-sektionen og skjul 'Ja'-sektionen
+    noContentTwo.classList.add('visible');
+    yesContentTwo.classList.remove('visible');
+
+});
+
+// Branching Scenarios: Scenarie 1 - Du valgte forkert
+
+const yesButtonThree = document.getElementById('yesButtonThree'); // Vælg knapperne fra HTML
+const noButtonThree = document.getElementById('noButtonThree'); // Vælg knapperne fra HTML
+const yesContentThree = document.getElementById('yesContentThree'); // Vælg sektionerne med indhold fra HTML
+const noContentThree = document.getElementById('noContentThree'); // Vælg sektionerne med indhold fra HTML
+
+// Handling, når man tykker "yesButton":
+yesButtonThree.addEventListener('click', function() {
+    // Vis kun 'Ja'-sektionen og skjul 'Nej'-sektionen
+    yesContentThree.classList.add('visible');
+    noContentThree.classList.remove('visible');
+});
+
+// Handling, når man tykker "noButton":
+noButtonThree.addEventListener('click', function() {
+    // Vis kun 'Nej'-sektionen og skjul 'Ja'-sektionen
+    noContentThree.classList.add('visible');
+    yesContentThree.classList.remove('visible');
+
+});
 
 
 
