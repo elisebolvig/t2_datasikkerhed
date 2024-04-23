@@ -13,6 +13,7 @@
 body {
     overflow: hidden; /* Denne funktion forhindrer scroll på desktop 
 } */
+/* TEXT STYLING */
 h1, h2, h3, h4 {
   margin-top: 10vh;
   font-family: "Rubik Mono One", monospace;
@@ -40,6 +41,7 @@ p {
   line-height: 1.5;
 }
 
+/* BACK BUTTONS */
 .back-btn-light-green, .back-btn-orange, .back-btn-green {
   text-decoration: none;
   border: none;
@@ -47,9 +49,12 @@ p {
   font-size: 25px;
   text-transform: uppercase;
   font-weight: 900;
+}
+
+.back-btn-light-green {
   color: #8FC8A9;
 }
-.back-btn-light-green:hover, .back-btn-orange:hover, .back-btn-green:hover {
+.back-btn-light-green:hover {
   border-bottom: 3px solid #8FC8A9;
 }
 
@@ -67,18 +72,11 @@ p {
   border-bottom: 3px solid #2B585B;
 }
 
-/* PILE */
+/* ARROWS */
 .arrow-container-right {
   position: absolute;
   bottom: 30px;
   right: 30px;
-}
-
-.arrow-container-left {
-  position: relative;
-  margin-top: 17vh;
-  bottom: 30px;
-  left: 0px;
 }
 
 .arrow-container-center {
@@ -88,16 +86,15 @@ p {
   transform: rotate(45deg);
 }
 
-.arrow { /*Skal laves til en mix-in*/
+.arrow {
   width: 100px;
   height: auto;
 }
 
+/* FULL SCREEN LAYOUT TEXT SECTIONS */
 .text-zero, .text-one, .text-two, .text-three, .text-four, .text-five {
   height: 100vh;
-  background-color: #C1DFEF;
   padding: 5vh;
-  color: #2B585B;
   position: relative;
 }
 .text-zero p, .text-one p, .text-two p, .text-three p, .text-four p, .text-five p {
@@ -106,6 +103,11 @@ p {
   margin-top: 20vh;
   margin-left: 15vw;
   line-height: 1.5;
+}
+
+.text-zero {
+  background-color: #C1DFEF;
+  color: #2B585B;
 }
 
 .text-one {
@@ -118,9 +120,9 @@ p {
   color: #CF624A;
 }
 
-.text-four {
-  background-color: #8FC8A9;
-  color: #CF624A;
+.text-three {
+  background-color: #C1DFEF;
+  color: #2B585B;
 }
 
 .text-four {
@@ -128,6 +130,12 @@ p {
   color: #8FC8A9;
 }
 
+.text-five {
+  background-color: #C1DFEF;
+  color: #2B585B;
+}
+
+/* TEASER */
 .section-zero {
   height: 100vh;
   background-color: #CF624A;
@@ -144,8 +152,8 @@ p {
   margin: 5vh 25vw;
 }
 
-/* Branching Scenarios */
-.section-one, #yesContent, #noContent, .section-two, #yesContentTwo, #noContentTwo {
+/* BRANCHING SCENARIOS */
+.section-one, #yesContent, #noContent, .section-two, #yesContentTwo, #noContentTwo, #yesContentThree, #noContentThree, #yesContentFour, #noContentFour {
   height: 100vh;
   background-color: #C1DFEF;
   text-align: center;
@@ -153,7 +161,7 @@ p {
   justify-content: center;
   padding: 20vh;
 }
-.section-one h2, #yesContent h2, #noContent h2, .section-two h2, #yesContentTwo h2, #noContentTwo h2 {
+.section-one h2, #yesContent h2, #noContent h2, .section-two h2, #yesContentTwo h2, #noContentTwo h2, #yesContentThree h2, #noContentThree h2, #yesContentFour h2, #noContentFour h2 {
   font-size: 50px;
   margin-bottom: 10vh;
   margin-left: 0;
@@ -161,20 +169,20 @@ p {
   color: #2B585B;
   margin-top: 5vh;
 }
-.section-one h4, #yesContent h4, #noContent h4, .section-two h4, #yesContentTwo h4, #noContentTwo h4 {
+.section-one h4, #yesContent h4, #noContent h4, .section-two h4, #yesContentTwo h4, #noContentTwo h4, #yesContentThree h4, #noContentThree h4, #yesContentFour h4, #noContentFour h4 {
   color: #CF624A;
 }
-.section-one p, #yesContent p, #noContent p, .section-two p, #yesContentTwo p, #noContentTwo p {
+.section-one p, #yesContent p, #noContent p, .section-two p, #yesContentTwo p, #noContentTwo p, #yesContentThree p, #noContentThree p, #yesContentFour p, #noContentFour p {
   width: 60vw;
   color: #2B585B;
   margin: 5vh 10vw 10vh 10vw;
   font-size: 20px;
 }
 
+/*
 .hidden {
-  display: none;
-}
-
+    display: none;
+}*/
 button {
   margin: 10px 40px;
   width: 250px;
@@ -337,5 +345,9 @@ button img {
 }
 
 #noContentThree.visible {
+  display: block;
+}
+
+#noContentFour.visible, #yesContentFour.visible {
   display: block;
 }/*# sourceMappingURL=style.css.map */

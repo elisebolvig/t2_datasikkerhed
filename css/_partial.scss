@@ -1,8 +1,33 @@
 
 /* Variabler */
 
-$bg-color-1:red;
-$primary-color: #336699;
+$primary-color-1: #2B585B;
+$primary-color-2: #8FC8A9;
+$primary-color-3: #C1DFEF;
+$primary-color-4: #CF624A;
 
 
 /* Mix-ins */  
+
+@mixin full-screen-layout-text-sections {
+    height: 100vh;
+    padding: 5vh;
+    position: relative;
+
+    p{
+        width: 60vw;
+        font-size: 30px;
+        margin-top: 20vh;
+        margin-left: 15vw;
+        line-height: 1.5;
+    }
+}
+
+@mixin back-btn{
+    text-decoration: none;
+    border: none;
+    font-family: "Rubik Mono One", monospace;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 900;
+}

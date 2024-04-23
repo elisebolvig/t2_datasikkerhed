@@ -110,6 +110,28 @@ noButtonThree.addEventListener('click', function() {
 
 });
 
+// Branching Scenarios: 
+
+const yesButtonFour = document.getElementById('yesButtonFour'); // Vælg knapperne fra HTML
+const noButtonFour = document.getElementById('noButtonFour'); // Vælg knapperne fra HTML
+const yesContentFour = document.getElementById('yesContentFour'); // Vælg sektionerne med indhold fra HTML
+const noContentFour = document.getElementById('noContentFour'); // Vælg sektionerne med indhold fra HTML
+
+// Handling, når man tykker "yesButton":
+yesButtonFour.addEventListener('click', function() {
+    // Vis kun 'Ja'-sektionen og skjul 'Nej'-sektionen
+    yesContentFour.classList.add('visible');
+    noContentFour.classList.remove('visible');
+});
+
+// Handling, når man trykker på "noButtonFour":
+noButtonFour.addEventListener('click', function() {
+    // Vis kun 'Nej'-sektionen og skjul 'Ja'-sektionen
+    noContentFour.classList.add('visible');
+    yesContentFour.classList.remove('visible');
+});
+
+
 
 
 
