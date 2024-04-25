@@ -68,7 +68,7 @@
         </div>
     </section>
 
-    <!-- Branching Scenarios: Oprettelse af nyt password -->
+    <!-- Branching Scenarios: Spørgsmål 1: Oprettelse af nyt password -->
 
     <section class="section-one" id="section-one">
 
@@ -86,7 +86,7 @@
 
     <section id="yesContent" class="hidden">
         <h2>KORREKT!</h2>
-        <p>Det er nemlig altid vigtigt at benytte kodeord, som ikke kan gættes! <br><br>Kodeordet skal helst bestå af mindst 8 tegn og meget gerne flere. Jo flere tegn, des længere tid vil det tage at hacke det. Specialtegn, tal og en blanding mellem store og små bogstaver er alt sammen med til at gøre dit kodeord endnu stærkere.</p>
+        <p> #yesContent Det er nemlig altid vigtigt at benytte kodeord, som ikke kan gættes! <br><br>Kodeordet skal helst bestå af mindst 8 tegn og meget gerne flere. Jo flere tegn, des længere tid vil det tage at hacke det. Specialtegn, tal og en blanding mellem store og små bogstaver er alt sammen med til at gøre dit kodeord endnu stærkere.</p>
 
         <h4>Er der andre måder du kan sikre dit password?</h4>
 
@@ -99,7 +99,7 @@
 
     <section id="noContent" class="hidden">
         <h2>FORKERT!</h2>
-        <p>Det er altid vigtigt at benytte kodeord med mange tegn. Kodeordet skal helst bestå af mindst 8 tegn og meget gerne flere. Jo flere tegn, des længere tid vil det tage at hacke det. Specialtegn, tal og en blanding mellem store og små bogstaver er alt sammen med til at gøre dit kodeord endnu stærkere. Specialtegn kan dog gøre dit kodeord svært at huske for dig selv. Hvis det er et problem for dig at huske et kodeord med specialtegn, så gå efter et meget langt password med almindelige bogstaver i stedet. Husk, at længden på passwordet er vigtigere end kompleksiteten. </p>
+        <p> #noContent Det er altid vigtigt at benytte kodeord med mange tegn. Kodeordet skal helst bestå af mindst 8 tegn og meget gerne flere. Jo flere tegn, des længere tid vil det tage at hacke det. Specialtegn, tal og en blanding mellem store og små bogstaver er alt sammen med til at gøre dit kodeord endnu stærkere. Specialtegn kan dog gøre dit kodeord svært at huske for dig selv. Hvis det er et problem for dig at huske et kodeord med specialtegn, så gå efter et meget langt password med almindelige bogstaver i stedet. Husk, at længden på passwordet er vigtigere end kompleksiteten. </p>
 
         <h4>Er der andre måder du kan sikre dit password?</h4>
 
@@ -110,11 +110,11 @@
     </section>
 
 
-    <!-- Branching Scenarios: Scenarie 2 -->
+    <!-- Branching Scenarios: Spørgsmål 2: Er der andre måder du kan sikre dit password? -->
 
     <section id="yesContentTwo" class="hidden">
         <h2>Du har helt ret!</h2>
-        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, maiores eos ratione dolorum vero optio repellendus quo nesciunt, recusandae temporibus adipisci quidem, tenetur inventore excepturi ullam dignissimos commodi rerum incidunt? </p>
+        <p> #yesContentTwo Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, maiores eos ratione dolorum vero optio repellendus quo nesciunt, recusandae temporibus adipisci quidem, tenetur inventore excepturi ullam dignissimos commodi rerum incidunt? </p>
 
         <h4>Ved du også, hvad en to-faktor-autentifikation(2FA) er?</h4>
 
@@ -127,80 +127,77 @@
 
     <section id="noContentTwo" class="hidden" >
         <h2>Øv... det er helt forkert!</h2>
-        <p>Det findes nemlig flere muligheder for at beskytte sine adgangskoder til online kontier og øvrige tjenester. En af de mest typiske er nemlig en password manager. </p>
+        <p> #noContentTwo Det findes nemlig flere muligheder for at beskytte sine adgangskoder til online kontier og øvrige tjenester. En af de mest typiske er nemlig en password manager. </p>
 
-        <h4>Hvad er To-faktor-autentifikation(2FA)?</h4>
+        <h4>Hvad er to-faktor-autentifikation(2FA)?</h4>
 
         <div>
-            <button>En sikkerhedsforanstaltning, der kræver to forskellige former for identifikation fra en bruger for at få adgang til en konto eller en tjeneste. Det tilføjer en ekstra lag af sikkerhed ud over blot at indtaste et brugernavn og password.</button>
-            <button>To-faktor-autentifikation (2FA) er en softwarefunktion, der tilføjer to ekstra bogstaver til dit brugernavn for at forbedre sikkerheden. Dette gør det mere besværligt for angribere at gætte din adgangskode.</button>
+            <button id="yesButtonFive">En sikkerhedsforanstaltning, der kræver to forskellige former for identifikation fra en bruger for at få adgang til en konto eller en tjeneste. Det tilføjer en ekstra lag af sikkerhed ud over blot at indtaste et brugernavn og password.</button>
+            <button id="noButtonFive">To-faktor-autentifikation (2FA) er en softwarefunktion, der tilføjer to ekstra bogstaver til dit brugernavn for at forbedre sikkerheden. Dette gør det mere besværligt for angribere at gætte din adgangskode.</button>
         </div>
-        
-
     </section>
 
-    <section id="yesContentThree" class="hidden">
-        <h2>Du har helt styr på det!</h2>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magni nobis consequatur ratione voluptatibus. Atque quam deleniti, id, dignissimos sequi labore similique odit laboriosam asperiores quae nobis quibusdam a. Quo. </p>
+    <!-- Branching Scenarios: Spørgsmål 3: Hvad er to-faktor-autentifikation(2FA) -->
 
-        <h4>Spørgsmål</h4>
+    <section id="yesContentThree" class="hidden">
+        <h2>Korrekt!</h2>
+        <p> #yesContentThree (Her skal stå noget om to faktorgodekendelse) Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magni nobis consequatur ratione voluptatibus. Atque quam deleniti, id, dignissimos sequi labore similique odit laboriosam asperiores quae nobis quibusdam a. Quo. </p>
+
+        <h4>Hvorfor bør man undgå at genbruge passwords?</h4>
 
         <div>
-            <button>Korrekt</button>
-            <button>Forkert</button>
+            <button id="yesButtonSix">For at gøre det sværere for hackere at få adgang til flere konti</button>
+            <button id="noButtonSix">For at undgå at glemme dem</button>
         </div>
         
     </section>
 
     <section id="noContentThree" class="hidden" >
         <h2>FORKERT!</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem culpa suscipit fuga atque reiciendis, harum quibusdam dicta unde nisi similique consequatur enim vel aliquid eveniet quis provident rerum iste incidunt!</p>
+        <p>#noContentThree (Her skal stå noget om to faktorgodekendelse)Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem culpa suscipit fuga atque reiciendis, harum quibusdam dicta unde nisi similique consequatur enim vel aliquid eveniet quis provident rerum iste incidunt!</p>
 
-        <h4>Nyt spørgsmål</h4>
-
-        <div>
-            <button>Korrekt</button>
-            <button>Forkert</button>
-        </div>
-
-    </section>
-
-    <section id="yesContentFour" class="hidden">
-        <h2>Du har helt styr på det!</h2>
-        <p>Det er nemlig altid vigtigt at benytte kodeord med mange tegn. <br><br>Kodeordet skal helst bestå af mindst 8 tegn og meget gerne flere. Jo flere tegn, des længere tid vil det tage at hacke det. Specialtegn, tal og en blanding mellem store og små bogstaver er alt sammen med til at gøre dit kodeord endnu stærkere. Specialtegn kan dog gøre dit kodeord svært at huske for dig selv. Hvis det er et problem for dig at huske et kodeord med specialtegn, så gå efter et meget langt password med almindelige bogstaver i stedet. Husk, at længden på passwordet er vigtigere end kompleksiteten. </p>
-
-        <h4>Nyt spørgsmål</h4>
+        <h4>Hvorfor bør man undgå at genbruge passwords?</h4>
 
         <div>
-            <button>Korrekt</button>
-            <button>Forkert</button>
+            <button id="yesButtonSeven">For at gøre det sværere for hackere at få adgang til flere konti.</button>
+            <button id="noButtonSeven">For at undgå at glemme dem.</button>
         </div>
-        
     </section>
 
-    <section id="noContentFour" class="hidden" >
+    <!-- Branching Scenarios: Spørgsmål 4:  -->
+
+    <section id="yesContentFive" class="hidden">
+        <h2>Korrekt!</h2>
+        <p> #yesContentFive (Her skal stå noget om to faktorgodekendelse) Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magni nobis consequatur ratione voluptatibus. Atque quam deleniti, id, dignissimos sequi labore similique odit laboriosam asperiores quae nobis quibusdam a. Quo. </p>
+
+        <h4>Føler du dig klar til at oprette og administrere<br>sikre passwords på dine online konti?</h4>
+
+        <div>
+            <button id="yesLastButtonOne">Ja, jeg føler mig godt rustet til at beskytte mine konti med stærke passwords.</button>
+            <button id="noLastButtonOne">Jeg har stadig brug for at lære mere om password-sikkerhed.</button>
+        </div>
+    </section>
+
+    <section id="noContentFive" class="hidden" >
         <h2>FORKERT!</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo alias voluptate cumque at id, maxime, tempore molestiae adipisci aspernatur fugit quod. Nesciunt velit, dolorum iste maiores autem dolorem voluptatibus nostrum!</p>
+        <p>#noContentFive (Her skal stå noget om to faktorgodekendelse)Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem culpa suscipit fuga atque reiciendis, harum quibusdam dicta unde nisi similique consequatur enim vel aliquid eveniet quis provident rerum iste incidunt!</p>
 
-        <h4>Nyt spørgsmål</h4>
+        <h4>Føler du dig klar til at oprette og administrere<br>sikre passwords på dine online konti?</h4>
 
         <div>
-            <button>Korrekt</button>
-            <button>Forkert</button>
+            <button id="yesLastButtonTwo">Ja, jeg føler mig godt rustet til at beskytte mine konti med stærke passwords.</button>
+            <button id="noLastButtonTwo">Jeg har stadig brug for at lære mere om password-sikkerhed.</button>
         </div>
-
     </section>
-
-
 
     <!-- Afslutning -->
 
-    <section class="section-zero" id="section-end">
+    <section class="section-zero" id="yesSectionEnd">
         <h3>TILLYKKE</h3>
         <p>Du er klar til at begå dig på nettet!</p>
     </section>
 
-    <section class="section-zero">
+    <section class="section-zero" id="noSectionEnd">
         <h3>Øv altså!</h3>
         <p>Måske du skulle prøve igen? Du er ikke helt klar til at lave stærke kodeord endnu</p>
     </section>

@@ -43,7 +43,7 @@ p{
     line-height: 1.5;
 }
 
-/* BACK BUTTONS */
+/* BUTTONS */
 
 .back-btn-light-green, .back-btn-orange, .back-btn-green{
     @include partial.back-btn;
@@ -70,6 +70,31 @@ p{
 
     &:hover{
         border-bottom: 3px solid partial.$primary-color-1;
+    }
+}
+
+button { /*Mix-in gider ikek virke */
+    margin: 10px 40px;
+    padding: 20px 20px;
+    max-width: 400px;
+    min-width: 250px;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: partial.$primary-color-4;
+    color: #fff;
+    border: none;
+    transition: transform 0.3s ease;
+    letter-spacing: 2px;
+    font-weight: 400;
+
+
+    &:hover{
+        transform: scale(1.2);
+    }
+
+    img{
+        color: #FFF;
     }
 }
 
@@ -130,28 +155,9 @@ p{
     color: partial.$primary-color-1;
 }
 
-/* TEASER */
+/* TEASER */ 
 
-.section-zero{
-    height: 100vh;
-    background-color: partial.$primary-color-4;
-    color: partial.$primary-color-2;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding: 10vh 0;
-
-    p{
-        width: 50vw;
-        line-height: 1.5;
-        font-size: 20px;
-        margin: 5vh 25vw;
-    }
-}
-
-/* BRANCHING SCENARIOS */
-
-.section-one, #yesContent, #noContent, .section-two, #yesContentTwo, #noContentTwo, #yesContentThree, #noContentThree, #yesContentFour, #noContentFour{
+.section-one{
     height: 100vh;
     background-color: #C1DFEF;
     text-align: center;
@@ -180,41 +186,56 @@ p{
     }
 }
 
-/*
-.hidden {
-    display: none;
-}*/
+/* AFSLUTNING */
 
-button {
-    margin: 10px 40px;
-    width: 250px;
-    height: 50px;
-    font-size: 16px;
-    border-radius: 15px;
-    cursor: pointer;
+.section-zero{
+    height: 100vh;
     background-color: partial.$primary-color-4;
-    color: #fff;
-    border: none;
-    transition: transform 0.3s ease;
-    letter-spacing: 2px;
-    font-weight: 400;
+    color: partial.$primary-color-2;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 0;
 
-
-    &:hover{
-        transform: scale(1.2);
+    p{
+        width: 50vw;
+        line-height: 1.5;
+        font-size: 20px;
+        margin: 5vh 25vw;
     }
-
-    img{
-        color: #FFF;
-    }
-
 }
 
+/* BRANCHING SCENARIOS */
 
+#yesContent, #noContent, .section-two, #yesContentTwo, #noContentTwo, #yesContentThree, #noContentThree, #yesContentFour, #noContentFour{
+    height: 100vh;
+    background-color: #C1DFEF;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20vh;
 
-#yesButton, #noButton{
-    text-transform: none;
+    h2{
+        font-size: 50px;
+        margin-bottom: 10vh;
+        margin-left: 0;
+        text-transform: uppercase;
+        color: partial.$primary-color-1;
+        margin-top: 5vh;
+    }
+
+    h4{
+        color: partial.$primary-color-4;
+    }
+
+    p{
+        width: 60vw;
+        color: partial.$primary-color-1;
+        margin: 5vh 10vw 10vh 10vw;
+        font-size: 20px;
+    }
 }
+
 
 #yesContent {
     background-color: partial.$primary-color-2;
@@ -239,16 +260,6 @@ button {
         width: 80vw;
     }
 
-    button{
-        width: 400px;
-        height: 100px;
-        padding: 20px;
-    }
-}
-
-
-#yesContent.visible{
-    display: block;
 }
 
 #noContent {
@@ -278,20 +289,7 @@ button {
         width: 80vw;
         color: partial.$primary-color-2;
     }
-
-    button{
-        width: 400px;
-        height: 100px;
-        padding: 20px;
-        background-color: partial.$primary-color-4;
-        color: #fff;
-    }
 }
-
-#noContent.visible {
-    display: block;
-}
-
 
 #yesContentTwo, #yesContentThree {
     background-color: partial.$primary-color-2;
@@ -315,21 +313,9 @@ button {
         margin-bottom: 10vh;
         width: 80vw;
     }
-
-    button{
-        width: 400px;
-        height: 100px;
-        padding: 20px;
-    }
 }
 
-
-#yesContentTwo.visible, #noContentTwo.visible, #yesContentThree.visible{
-    display: block;
-}
-
-
-#noContentTwo, #noContentThree{
+#noContentTwo, #noContentThree, #yesContentFive, #noContentFive, #yesSectionEnd, #noSectionEnd{
     display: none;
     position: fixed;
     top: 0;
@@ -356,21 +342,15 @@ button {
         width: 80vw;
         color: partial.$primary-color-2;
     }
-
-    button{
-        width: 400px;
-        height: 100px;
-        padding: 20px;
-        background-color: partial.$primary-color-4;
-        color: #fff;
-    }
 }
 
-#noContentThree.visible{
-    display: block;
+/* Indstillinger til JavaScript funktion */
+
+.hidden {
+    display: none;
 }
 
-#noContentFour.visible, #yesContentFour.visible{
+#yesContent.visible, #yesContentTwo.visible, #noContentTwo.visible, #yesContentThree.visible, #noContent.visible, #noContentThree.visible, #noContentFour.visible, #yesContentFour.visible, #yesContentFive.visible, #noContentFive.visible, #yesSectionEnd.visible, #noSectionEnd.visible{
     display: block;
 }
 

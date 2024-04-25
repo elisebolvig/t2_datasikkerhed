@@ -41,9 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
-
-// Branching Scenarios: Scenarie 1
+// Branching Scenarios 
 
 const yesButton = document.getElementById('yesButton'); // Vælg knapperne fra HTML
 const noButton = document.getElementById('noButton'); // Vælg knapperne fra HTML
@@ -65,22 +63,19 @@ noButton.addEventListener('click', function() {
 
 });
 
-
-// Branching Scenarios: Scenarie 1 - Du valgte korrekt 
-
 const yesButtonTwo = document.getElementById('yesButtonTwo'); // Vælg knapperne fra HTML
 const noButtonTwo = document.getElementById('noButtonTwo'); // Vælg knapperne fra HTML
 const yesContentTwo = document.getElementById('yesContentTwo'); // Vælg sektionerne med indhold fra HTML
 const noContentTwo = document.getElementById('noContentTwo'); // Vælg sektionerne med indhold fra HTML
 
-// Handling, når man tykker "yesButton":
+// Handling, når man tykker "yesButtonTwo":
 yesButtonTwo.addEventListener('click', function() {
     // Vis kun 'Ja'-sektionen og skjul 'Nej'-sektionen
     yesContentTwo.classList.add('visible');
     noContentTwo.classList.remove('visible');
 });
 
-// Handling, når man tykker "noButton":
+// Handling, når man tykker "noButtonTwo":
 noButtonTwo.addEventListener('click', function() {
     // Vis kun 'Nej'-sektionen og skjul 'Ja'-sektionen
     noContentTwo.classList.add('visible');
@@ -88,21 +83,19 @@ noButtonTwo.addEventListener('click', function() {
 
 });
 
-// Branching Scenarios: Scenarie 1 - Du valgte forkert
-
 const yesButtonThree = document.getElementById('yesButtonThree'); // Vælg knapperne fra HTML
 const noButtonThree = document.getElementById('noButtonThree'); // Vælg knapperne fra HTML
-const yesContentThree = document.getElementById('yesContentThree'); // Vælg sektionerne med indhold fra HTML
-const noContentThree = document.getElementById('noContentThree'); // Vælg sektionerne med indhold fra HTML
+const yesContentThree = document.getElementById('yesContentTwo'); // Vælg sektionerne med indhold fra HTML
+const noContentThree = document.getElementById('noContentTwo'); // Vælg sektionerne med indhold fra HTML
 
-// Handling, når man tykker "yesButton":
+// Handling, når man tykker "yesButtonThree":
 yesButtonThree.addEventListener('click', function() {
     // Vis kun 'Ja'-sektionen og skjul 'Nej'-sektionen
     yesContentThree.classList.add('visible');
     noContentThree.classList.remove('visible');
 });
 
-// Handling, når man tykker "noButton":
+// Handling, når man tykker "noButtonThree":
 noButtonThree.addEventListener('click', function() {
     // Vis kun 'Nej'-sektionen og skjul 'Ja'-sektionen
     noContentThree.classList.add('visible');
@@ -110,14 +103,13 @@ noButtonThree.addEventListener('click', function() {
 
 });
 
-// Branching Scenarios: 
 
 const yesButtonFour = document.getElementById('yesButtonFour'); // Vælg knapperne fra HTML
 const noButtonFour = document.getElementById('noButtonFour'); // Vælg knapperne fra HTML
-const yesContentFour = document.getElementById('yesContentFour'); // Vælg sektionerne med indhold fra HTML
-const noContentFour = document.getElementById('noContentFour'); // Vælg sektionerne med indhold fra HTML
+const yesContentFour = document.getElementById('yesContentThree'); // Vælg sektionerne med indhold fra HTML
+const noContentFour = document.getElementById('noContentThree'); // Vælg sektionerne med indhold fra HTML
 
-// Handling, når man tykker "yesButton":
+// Handling, når man tykker "yesButtonFour":
 yesButtonFour.addEventListener('click', function() {
     // Vis kun 'Ja'-sektionen og skjul 'Nej'-sektionen
     yesContentFour.classList.add('visible');
@@ -129,6 +121,101 @@ noButtonFour.addEventListener('click', function() {
     // Vis kun 'Nej'-sektionen og skjul 'Ja'-sektionen
     noContentFour.classList.add('visible');
     yesContentFour.classList.remove('visible');
+});
+
+const yesButtonFive = document.getElementById('yesButtonFive'); // Vælg knapperne fra HTML
+const noButtonFive = document.getElementById('noButtonFive'); // Vælg knapperne fra HTML
+const yesContentFive = document.getElementById('yesContentThree'); // Vælg sektionerne med indhold fra HTML
+const noContentFive = document.getElementById('noContentThree'); // Vælg sektionerne med indhold fra HTML
+
+// Handling, når man tykker "yesButtonFive":
+yesButtonFive.addEventListener('click', function() {
+    // Vis kun 'Ja'-sektionen og skjul 'Nej'-sektionen
+    yesContentFive.classList.add('visible');
+    noContentFive.classList.remove('visible');
+});
+
+// Handling, når man trykker på "noButtonFive":
+noButtonFive.addEventListener('click', function() {
+    // Vis kun 'Nej'-sektionen og skjul 'Ja'-sektionen
+    noContentFive.classList.add('visible');
+    yesContentFive.classList.remove('visible');
+});
+
+const yesButtonSix = document.getElementById('yesButtonSix'); // Vælg knapperne fra HTML
+const noButtonSix = document.getElementById('noButtonSix'); // Vælg knapperne fra HTML
+const yesContentSix = document.getElementById('yesContentFive'); // Vælg sektionerne med indhold fra HTML
+const noContentSix = document.getElementById('noContentFive'); // Vælg sektionerne med indhold fra HTML
+
+// Handling, når man tykker "yesButtonSix":
+yesButtonSix.addEventListener('click', function() {
+    // Vis kun 'Ja'-sektionen og skjul 'Nej'-sektionen
+    yesContentSix.classList.add('visible');
+    noContentSix.classList.remove('visible');
+});
+
+// Handling, når man trykker på "noButtonSix":
+noButtonFive.addEventListener('click', function() {
+    // Vis kun 'Nej'-sektionen og skjul 'Ja'-sektionen
+    noContentSix.classList.add('visible');
+    yesContentSix.classList.remove('visible');
+});
+
+const yesButtonSeven = document.getElementById('yesButtonSeven'); // Vælg knapperne fra HTML
+const noButtonSeven = document.getElementById('noButtonSeven'); // Vælg knapperne fra HTML
+const yesContentSeven = document.getElementById('yesContentFive'); // Vælg sektionerne med indhold fra HTML
+const noContentSeven = document.getElementById('noContentFive'); // Vælg sektionerne med indhold fra HTML
+
+// Handling, når man tykker "yesButtonSeven":
+yesButtonSeven.addEventListener('click', function() {
+    // Vis kun 'Ja'-sektionen og skjul 'Nej'-sektionen
+    yesContentSeven.classList.add('visible');
+    noContentSeven.classList.remove('visible');
+});
+
+// Handling, når man trykker på "noButtonSeven":
+noButtonSeven.addEventListener('click', function() {
+    // Vis kun 'Nej'-sektionen og skjul 'Ja'-sektionen
+    noContentSeven.classList.add('visible');
+    yesContentSeven.classList.remove('visible');
+});
+
+const yesLastButtonOne = document.getElementById('yesLastButtonOne'); // Vælg knapperne fra HTML
+const noLastButtonOne = document.getElementById('noLastButtonOne'); // Vælg knapperne fra HTML
+const yesLastContentOne = document.getElementById('yesSectionEnd'); // Vælg sektionerne med indhold fra HTML
+const noLastContentOne = document.getElementById('noSectionEnd'); // Vælg sektionerne med indhold fra HTML
+
+// Handling, når man tykker "yesLastButtonOne":
+yesLastButtonOne.addEventListener('click', function() {
+    // Vis kun 'Ja'-sektionen og skjul 'Nej'-sektionen
+    yesLastContentOne.classList.add('visible');
+    noLastContentOne.classList.remove('visible');
+});
+
+// Handling, når man trykker på "noLastButtonOne":
+noLastButtonOne.addEventListener('click', function() {
+    // Vis kun 'Nej'-sektionen og skjul 'Ja'-sektionen
+    noLastContentOne.classList.add('visible');
+    yesLastContentOne.classList.remove('visible');
+});
+
+const yesLastButtonTwo = document.getElementById('yesLastButtonTwo'); // Vælg knapperne fra HTML
+const noLastButtonTwo = document.getElementById('noLastButtonTwo'); // Vælg knapperne fra HTML
+const yesLastContentTwo = document.getElementById('yesSectionEnd'); // Vælg sektionerne med indhold fra HTML
+const noLastContentTwo = document.getElementById('noSectionEnd'); // Vælg sektionerne med indhold fra HTML
+
+// Handling, når man tykker "yesLastButtonOne":
+yesLastButtonTwo.addEventListener('click', function() {
+    // Vis kun 'Ja'-sektionen og skjul 'Nej'-sektionen
+    yesLastContentTwo.classList.add('visible');
+    noLastContentTwo.classList.remove('visible');
+});
+
+// Handling, når man trykker på "noLastButtonOne":
+noLastButtonTwo.addEventListener('click', function() {
+    // Vis kun 'Nej'-sektionen og skjul 'Ja'-sektionen
+    noLastContentTwo.classList.add('visible');
+    yesLastContentTwo.classList.remove('visible');
 });
 
 
