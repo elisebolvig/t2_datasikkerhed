@@ -3,7 +3,7 @@
 
 $primary-color-1: #2B585B;
 $primary-color-2: #8FC8A9;
-$primary-color-3: #C1DFEF;
+$primary-color-3: #A1E0F2;
 $primary-color-4: #CF624A;
 
 
@@ -55,4 +55,68 @@ $primary-color-4: #CF624A;
     img{
         color: #FFF;
     }
+}
+
+@mixin full-screen-layout-quiz-section {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    p{
+        text-align: center;
+        margin-left: 10vw;
+        margin-bottom: 10vh;
+        width: 80vw;
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 50px;
+        margin-bottom: 10vh;
+        margin-left: 0;
+        text-transform: uppercase;
+        margin-top: 5vh;
+    }
+
+}
+
+@mixin popup {
+    background-color: partial.$primary-color-1;
+    width: 85%;
+    height: 85%;
+    margin: 0 auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+
+    h4{
+        color: #FFF;
+        margin: 20px 0;
+    }
+
+    p{
+        width: 70vw;
+        line-height: 1.7;
+    }
+
+
 }

@@ -219,6 +219,59 @@ noLastButtonTwo.addEventListener('click', function() {
 });
 
 
+// Pop up 
+document.addEventListener('DOMContentLoaded', function() {
+    const iconElement = document.getElementById('icon');
+    const popupContainer = document.getElementById('popupContainer');
+    const closePopupButton = document.getElementById('closePopup');
+
+    // Viser pop-up vindue, når der klikkes på ikonet
+    iconElement.addEventListener('click', function() {
+        popupContainer.classList.remove('hidden');
+    });
+
+    // Lukker pop-up vindue, når der klikkes på luk-knappen
+    closePopupButton.addEventListener('click', function() {
+        popupContainer.classList.add('hidden');
+    });
+
+    // Eksempel på at bruge pop-up funktionen
+    const welcomeMessage = "Velkommen til vores hjemmeside!";
+    showPopup(welcomeMessage);
+
+    // Viser pop-up vindue
+    function showPopup(message) {
+        const popupHeading = document.getElementById('popupHeading');
+        popupHeading.textContent = message;
+    }
+});
+
+// Pop up 1
+document.addEventListener('DOMContentLoaded', function() {
+    const iconElement1 = document.getElementById('icon1');
+    const popupContainer1 = document.getElementById('popupContainer1');
+    const closePopupButton1 = document.getElementById('closePopup1');
+
+    // Viser pop-up vindue, når der klikkes på ikonet
+    iconElement1.addEventListener('click', function() {
+        popupContainer1.classList.remove('hidden');
+    });
+
+    // Lukker pop-up vindue, når der klikkes på luk-knappen
+    closePopupButton1.addEventListener('click', function() {
+        popupContainer1.classList.add('hidden');
+    });
+
+    // Eksempel på at bruge pop-up funktionen
+    const welcomeMessage = "Velkommen til vores hjemmeside!";
+    showPopup(welcomeMessage);
+
+    // Viser pop-up vindue
+    function showPopup(message) {
+        const popupHeading = document.getElementById('popupHeading');
+        popupHeading1.textContent = message;
+    }
+});
 
 
-
+  
