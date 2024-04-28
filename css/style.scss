@@ -20,7 +20,7 @@ h1, h2, h3, h4{
     margin-top: 10vh;
     font-family: "Rubik Mono One", monospace;
     font-weight: 900;
-    font-size: 130px;
+    font-size: 1em;
     text-transform: uppercase;
     margin: 12vh 0 0 10vw;
 }
@@ -352,7 +352,7 @@ button { /*Mix-in gider ikke virke */
     display: none;
 }
 
-/* FOLD UD STULING */
+/* FOLD UD STYLING */
 
 #fold-ud {
     display: flex;
@@ -415,11 +415,48 @@ button { /*Mix-in gider ikke virke */
    
   /* For mobile screens */
   @media (max-width: 767px) {
+
+
     .accordion {
       max-width: 100vw;
       margin: 0 auto;
     }
+
   }
   }
    
+
+  /* For mobile screens */
+@media (max-width: 767px) {
+
+    /* TEXT STYLING */
+
+    h1, h2, h3, h4 {
+        font-weight: 900;
+        margin: 10vh 0 0 10vw; /* kombineret margin */
+    }
+
+    h1 {
+        font-size: 10px;
+    }
+
+    h2 {
+        font-size: 10px;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+
+    h4 {
+        font-size: 10px;
+        margin-bottom: 10vh;
+        color: partial.$primary-color-1;
+        margin: 5vh auto; /* kombineret margin */
+    }
+
+    p {
+        line-height: 1.5;
+    }
+}
 

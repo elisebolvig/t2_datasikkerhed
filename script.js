@@ -155,7 +155,7 @@ yesButtonSix.addEventListener('click', function() {
 });
 
 // Handling, når man trykker på "noButtonSix":
-noButtonFive.addEventListener('click', function() {
+noButtonSix.addEventListener('click', function() {
     // Vis kun 'Nej'-sektionen og skjul 'Ja'-sektionen
     noContentSix.classList.add('visible');
     yesContentSix.classList.remove('visible');
@@ -234,10 +234,6 @@ document.addEventListener('DOMContentLoaded', function() {
     closePopupButton.addEventListener('click', function() {
         popupContainer.classList.add('hidden');
     });
-
-    // Eksempel på at bruge pop-up funktionen
-    const welcomeMessage = "Velkommen til vores hjemmeside!";
-    showPopup(welcomeMessage);
 
     // Viser pop-up vindue
     function showPopup(message) {
