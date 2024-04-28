@@ -273,5 +273,33 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Fold ud 
+
+document.querySelectorAll('.accordion-item h2').forEach((accordionToggle) => {
+    accordionToggle.addEventListener('click', () => {
+        const accordionItem = accordionToggle.parentNode;
+        const accordionContent = accordionToggle.nextElementSibling;
+        
+        // Lukker alle andre åbne faner
+        document.querySelectorAll('.accordion-item').forEach((item) => {
+            if (item !== accordionItem) {
+                const content = item.querySelector('.accordion-content');
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    item.classList.remove('active');
+                }
+            }
+        });
+        
+        // Håndterer åbning/lukning af den aktuelle fane
+        if (accordionContent.style.maxHeight) {
+            accordionContent.style.maxHeight = null;
+            accordionItem.classList.remove('active');
+        } else {
+            accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+            accordionItem.classList.add('active');
+        }
+    });
+});
 
   
