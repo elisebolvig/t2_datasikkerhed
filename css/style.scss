@@ -390,9 +390,9 @@ button { /*Mix-in gider ikke virke */
     display: none;
 }
 
-/* FOLD UD STYLING */
+/* FOLD UD STYLING TIL TEKST SEKTION */
 
-#fold-ud {
+.fold-ud {
     display: flex;
     flex-direction:row;
     justify-content:center;
