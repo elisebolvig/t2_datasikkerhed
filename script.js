@@ -1,4 +1,3 @@
-
 // Smooth scroll
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -41,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// Branching Scenarios 
+// Javascript til branching scenarios 
 
 const yesButton = document.getElementById('yesButton'); // Vælg knapperne fra HTML
 const noButton = document.getElementById('noButton'); // Vælg knapperne fra HTML
@@ -60,7 +59,6 @@ noButton.addEventListener('click', function() {
     // Vis kun 'Nej'-sektionen og skjul 'Ja'-sektionen
     noContent.classList.add('visible');
     yesContent.classList.remove('visible');
-
 });
 
 const yesButtonTwo = document.getElementById('yesButtonTwo'); // Vælg knapperne fra HTML
@@ -102,7 +100,6 @@ noButtonThree.addEventListener('click', function() {
     yesContentThree.classList.remove('visible');
 
 });
-
 
 const yesButtonFour = document.getElementById('yesButtonFour'); // Vælg knapperne fra HTML
 const noButtonFour = document.getElementById('noButtonFour'); // Vælg knapperne fra HTML
@@ -218,6 +215,19 @@ noLastButtonTwo.addEventListener('click', function() {
     yesLastContentTwo.classList.remove('visible');
 });
 
+// Handling, når man trykker på "Prøv igen"
+const refresh1 = document.getElementById('refresh-btn-1')
+const refresh2 = document.getElementById('refresh-btn-2')
+const refreshLandingPage = document.getElementById('link1')
+
+refresh1.addEventListener('click', function() {
+    refreshLandingPage.classList.add('visible');
+})
+
+refresh2.addEventListener('click', function() {
+    refreshLandingPage.classList.add('visible');
+})
+
 
 // Pop up 
 document.addEventListener('DOMContentLoaded', function() {
@@ -269,9 +279,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Fold ud 
+// Javascript til fold ud tekst
 
-document.querySelectorAll('.accordion-item h2').forEach((accordionToggle) => {
+document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
     accordionToggle.addEventListener('click', () => {
         const accordionItem = accordionToggle.parentNode;
         const accordionContent = accordionToggle.nextElementSibling;

@@ -83,18 +83,9 @@ $primary-color-4: #CF624A;
     h2{
         font-size: 50px;
         margin-bottom: 10vh;
-        margin-left: 0;
         text-transform: uppercase;
         margin-top: 5vh;
     }
-
-    @media (max-width: 400px) {
-        
-        
-    }
-
-
-
 }
 
 @mixin popup {
@@ -124,6 +115,4 @@ $primary-color-4: #CF624A;
         width: 70vw;
         line-height: 1.7;
     }
-
-
 }
